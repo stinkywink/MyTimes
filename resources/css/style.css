@@ -31,7 +31,7 @@ nav span {
     color: MediumAquamarine;
 }
 div {
-    border: 1px solid black;
+    display: block;
 }
 .content {
     display: flex;
@@ -41,6 +41,7 @@ div {
 }
 .column.large {
   width: 630px;
+
 }
 
 .column.medium {
@@ -54,4 +55,48 @@ div {
     display: flex;
     flex-direction: column;
     margin-right: 32px;
+}
+a {
+  color: black;
+}
+.lead-story .image-content {
+    background-image: url(../images/MainStory.png);
+    width: 630px;
+    margin-top: 0;
+    font-size: 40px;
+    text-align: left;
+}
+.fall-cancelled.image-content {
+  background-image: url(../images/FallSeason.png);
+}
+.pop-culture.image-content {
+  background-image: url(../images/Hipster.png);
+}
+.cat-ceo.image-content {
+  background-image: url(../images/catCEO.png);
+}
+.image-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 15px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+.story {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.stories {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
 }
