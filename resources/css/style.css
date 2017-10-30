@@ -11,37 +11,46 @@ header {
   font-size: 14px;
   font-weight: bold;
 }
-header nav {
-  padding-right: 40px;
-}
 .logo {
   display: flex;
   align-items: center;
   flex-grow: 1;
   padding-left: 30px;
 }
-nav, {
-  display: block;
+nav {
+  display: flex;
 }
 nav span {
   display: inline-block;
   padding: 20px 10px;
 }
 .logo span {
-    color: MediumAquamarine;
+  color: MediumAquamarine;
+}
+header nav {
+  padding-right: 40px;
 }
 div {
-    display: block;
+  border: 1px solid black;
+  display: block;
+}
+.logo img {
+  width: 70px;
+  height: 60px;
+  margin-right: 12px;
 }
 .content {
-    display: flex;
-    width: 1232px;
-    margin: 0 auto 78px auto;
-    padding-top: 116px;
+  display: flex;
+  width: 1232px;
+  padding-top: 116px;
+}
+}
+.column {
+  display: flex;
+  flex-direction: column;
 }
 .column.large {
   width: 630px;
-
 }
 
 .column.medium {
@@ -51,52 +60,38 @@ div {
 .column.small {
   width: 240px;
 }
-.column {
-    display: flex;
-    flex-direction: column;
-    margin-right: 32px;
-}
-a {
-  color: black;
-}
 .lead-story .image-content {
-    background-image: url(../images/MainStory.png);
-    width: 630px;
-    margin-top: 0;
-    font-size: 40px;
-    text-align: left;
-}
-.fall-cancelled.image-content {
-  background-image: url(../images/FallSeason.png);
-}
-.pop-culture.image-content {
-  background-image: url(../images/Hipster.png);
-}
-.cat-ceo.image-content {
-  background-image: url(../images/catCEO.png);
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
+  width: 630px;
+  margin-top: 0;
+  font-size: 40px;
+  text-align: left;
 }
 .image-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 300px;
-  margin-top: 15px;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    margin-top: 15px;
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-align: center;
 }
 .story {
   font-family: Georgia;
   font-size: 17px;
   color: black;
-  display: flex;
   flex-direction: column;
-  width: 300px;
+  display: flex;
 }
 .stories {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 17px;
+  display: inline-flex;
+}
+.fall-cancelled.image-content {
+    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png);
+}
+.pop-culture.image-content {
+    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png);
 }
