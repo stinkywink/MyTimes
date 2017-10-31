@@ -31,7 +31,6 @@ header nav {
   padding-right: 40px;
 }
 div {
-  border: 1px solid black;
   display: block;
 }
 .logo img {
@@ -43,11 +42,13 @@ div {
   display: flex;
   width: 1232px;
   padding-top: 116px;
+  margin: 0 auto 78px auto;
 }
-}
+
 .column {
   display: flex;
   flex-direction: column;
+  margin-right: 32px;
 }
 .column.large {
   width: 630px;
@@ -59,16 +60,16 @@ div {
 
 .column.small {
   width: 240px;
+  flex-direction: column;
 }
 .lead-story .image-content {
-  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
+  background-image: url(../images/MainStory.png);
   width: 630px;
   margin-top: 0;
   font-size: 40px;
   text-align: left;
 }
 .image-content {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     height: 300px;
@@ -81,17 +82,74 @@ div {
 }
 .story {
   font-family: Georgia;
-  font-size: 17px;
   color: black;
   flex-direction: column;
   display: flex;
+  width: 300px;
 }
 .stories {
   display: inline-flex;
+  justify-content: space-between;
+  margin-top: 17px;
 }
 .fall-cancelled.image-content {
-    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png);
+  background-image: url(../images/FallSeason.png);
 }
 .pop-culture.image-content {
-    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png);
+  background-image: url(../images/Hipster.png);
+}
+nav a {
+  color: black;
+}
+.stories .text-content {
+  height: 250px;
+}
+.narrative {
+  margin-top: 16px;
+}
+p {
+  display: block;
+}
+.cat-ceo.image-content {
+  background-image: url(../images/catCEO.png);
+}
+.news-bites .bite {
+    display: block;
+    padding: 11px 20px;
+    border-bottom: 1px solid black;
+    background-color: WhiteSmoke;
+    font-family: Verdana;
+    font-size: 12px;
+    color: DimGray;
+}
+.news-bites h3 {
+    margin-bottom: 41px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+footer {
+  display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ width: 100%;
+ height: 325px;
+ background-color: MediumAquamarine;
+ margin: auto;
+ font-family: Verdana;
+ font-size: 12px;
+}
+footer .title {
+  display: inline-block;
+ padding-right: 25px;
+ border-right: 2px solid white;
+ font-family: Georgia;
+ font-size: 16px;
+ font-weight: bold;
+ color: white;
+}
+footer nav {
+  display: inline-block;
+  padding-left: 25px;
 }
